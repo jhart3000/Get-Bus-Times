@@ -15,7 +15,9 @@ import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.net.URI;
+import java.net.URISyntaxException;
 
 import static com.bus.times.helper.JsonLoader.loadJsonFile;
 import static com.bus.times.helper.TestDataHelper.*;
@@ -39,6 +41,8 @@ class IntegrationTest {
 
   private MockRestServiceServer mockServer;
 
+  private static final String GET_API_URL = "/greatPortlandStreetTimes";
+
   @BeforeEach
   void init() {
     mockServer = MockRestServiceServer.createServer(restTemplate);
@@ -49,7 +53,7 @@ class IntegrationTest {
     mockClientResponse(STOP_G_CLIENT_RESPONSE_PATH, G_STOP_CODE);
     mockClientResponse(STOP_H_CLIENT_RESPONSE_PATH, H_STOP_CODE);
 
-    mvc.perform(get("/greatPortlandStreetTimes"))
+    mvc.perform(get(GET_API_URL))
         .andExpect(status().isOk())
         .andExpect(content().json(loadJsonFile(GET_BUS_TIME_RESPONSE_PATH)));
   }
@@ -63,7 +67,7 @@ class IntegrationTest {
         .andExpect(method(HttpMethod.GET))
         .andRespond(withServerError());
 
-    mvc.perform(get("/greatPortlandStreetTimes"))
+    mvc.perform(get(GET_API_URL))
         .andExpect(status().isOk())
         .andExpect(
             content()
@@ -72,7 +76,7 @@ class IntegrationTest {
                         "responses/getbustimes/get-bus-times-api-response-missing-values.json")));
   }
 
-  private void mockClientResponse(String responsePath, String stopCode) throws Exception {
+  private void mockClientResponse(String responsePath, String stopCode) throws IOException, URISyntaxException {
     mockServer
         .expect(ExpectedCount.once(), requestTo(new URI(format(CLIENT_URL, stopCode))))
         .andExpect(method(HttpMethod.GET))

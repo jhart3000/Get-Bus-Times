@@ -14,6 +14,7 @@ import org.springframework.test.web.client.ExpectedCount;
 import org.springframework.test.web.client.MockRestServiceServer;
 import org.springframework.web.client.RestTemplate;
 
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.List;
@@ -38,13 +39,18 @@ class GetTFLBusTimesClientTest {
 
   private MockRestServiceServer mockServer;
 
+  private static final String DATE = "2020-07-13T13:54:18Z";
+  private static final String DESTINATION = "Sudbury";
+  private static final String BUS_NUMBER = "18";
+  private static final long SECONDS_TO_ARRIVAL = 1772L;
+
   @BeforeEach
   void init() {
     mockServer = MockRestServiceServer.createServer(restTemplate);
   }
 
   @Test
-  void shouldReturnSuccessfulClientResponseGivenValidStopCode() throws Exception {
+  void shouldReturnSuccessfulClientResponseGivenValidStopCode() throws URISyntaxException, IOException {
     mockServer
         .expect(ExpectedCount.once(), requestTo(new URI(format(CLIENT_URL, G_STOP_CODE))))
         .andExpect(method(HttpMethod.GET))
@@ -62,11 +68,11 @@ class GetTFLBusTimesClientTest {
             TFLClientResponse::getLineId,
             TFLClientResponse::getTimeToStation,
             TFLClientResponse::getDestinationName)
-        .contains(tuple("2020-07-13T13:59:18Z", "18", 1772L, "Sudbury"));
+        .contains(tuple("2020-07-13T13:59:18Z", BUS_NUMBER, SECONDS_TO_ARRIVAL, DESTINATION));
   }
 
   @Test
-  void shouldReturnSuccessfulClientResponseGivenMissingFields() throws Exception {
+  void shouldReturnSuccessfulClientResponseGivenMissingFields() throws URISyntaxException, IOException {
     mockServer
         .expect(ExpectedCount.once(), requestTo(new URI(format(CLIENT_URL, G_STOP_CODE))))
         .andExpect(method(HttpMethod.GET))
@@ -85,8 +91,7 @@ class GetTFLBusTimesClientTest {
             TFLClientResponse::getTimeToStation,
             TFLClientResponse::getDestinationName)
         .contains(
-            tuple("2020-07-13T13:54:18Z", null, 1772L, "Sudbury"),
-            tuple("2020-07-13T13:54:18Z", "18", 0L, null));
+            tuple(DATE, null, SECONDS_TO_ARRIVAL, DESTINATION), tuple(DATE, BUS_NUMBER, 0L, null));
   }
 
   @Test

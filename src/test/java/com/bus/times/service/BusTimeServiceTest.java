@@ -29,7 +29,7 @@ class BusTimeServiceTest {
   private static final String EXPECTED_ARRIVAL = "2020-07-13T13:57:05Z";
 
   @Test
-  void shouldBuildResponseObjectFromClientObject() throws Exception {
+  void shouldBuildResponseObjectFromClientObject() throws InternalException {
     mockClientCall(G_STOP_CODE, DESTINATION, BUS_NUMBER, EXPECTED_ARRIVAL);
     mockClientCall(H_STOP_CODE, DESTINATION, BUS_NUMBER, EXPECTED_ARRIVAL);
 
@@ -47,7 +47,7 @@ class BusTimeServiceTest {
   }
 
   @Test
-  void shouldBuildResponseObjectFromClientObjectWithNullFields() throws Exception {
+  void shouldBuildResponseObjectFromClientObjectWithNullFields() throws InternalException {
     mockClientCall(G_STOP_CODE, null, null, EXPECTED_ARRIVAL);
     given(client.getListOfBusTimesForStop(H_STOP_CODE)).willReturn(List.of());
 
