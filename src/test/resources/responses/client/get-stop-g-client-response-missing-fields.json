@@ -1,0 +1,60 @@
+[
+  {
+    "$type": "Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities",
+    "id": "-519987967",
+    "operationType": 1,
+    "vehicleId": "BF67GKE",
+    "naptanId": "490000091G",
+    "stationName": "Great Portland Street Station",
+    "lineName": "18",
+    "platformName": "G",
+    "direction": "inbound",
+    "bearing": "277",
+    "destinationNaptanId": "",
+    "destinationName": "Sudbury",
+    "timestamp": "2020-07-13T13:29:46.5929707Z",
+    "timeToStation": 1772,
+    "currentLocation": "",
+    "towards": "Edgware Road or Marble Arch",
+    "expectedArrival": "2020-07-13T13:54:18Z",
+    "timeToLive": "2020-07-13T13:59:48Z",
+    "modeName": "bus",
+    "timing": {
+      "$type": "Tfl.Api.Presentation.Entities.PredictionTiming, Tfl.Api.Presentation.Entities",
+      "countdownServerAdjustment": "00:00:08.1731930",
+      "source": "2020-07-13T01:05:34.347Z",
+      "insert": "2020-07-13T13:29:49.778Z",
+      "read": "2020-07-13T13:29:57.952Z",
+      "sent": "2020-07-13T13:29:46Z",
+      "received": "0001-01-01T00:00:00Z"
+    }
+  },
+  {
+    "$type": "Tfl.Api.Presentation.Entities.Prediction, Tfl.Api.Presentation.Entities",
+    "id": "1955876174",
+    "operationType": 1,
+    "naptanId": "490000091G",
+    "stationName": "Great Portland Street Station",
+    "lineId": "18",
+    "lineName": "18",
+    "platformName": "G",
+    "direction": "inbound",
+    "bearing": "277",
+    "destinationNaptanId": "",
+    "timestamp": "2020-07-13T13:29:46.5929707Z",
+    "currentLocation": "",
+    "towards": "Edgware Road or Marble Arch",
+    "expectedArrival": "2020-07-13T13:54:18Z",
+    "timeToLive": "2020-07-13T13:54:48Z",
+    "modeName": "bus",
+    "timing": {
+      "$type": "Tfl.Api.Presentation.Entities.PredictionTiming, Tfl.Api.Presentation.Entities",
+      "countdownServerAdjustment": "00:00:08.1873023",
+      "source": "2020-07-13T01:05:34.347Z",
+      "insert": "2020-07-13T13:29:04.777Z",
+      "read": "2020-07-13T13:29:12.969Z",
+      "sent": "2020-07-13T13:29:46Z",
+      "received": "0001-01-01T00:00:00Z"
+    }
+  }
+]

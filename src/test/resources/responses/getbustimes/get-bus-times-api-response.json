@@ -1,0 +1,192 @@
+{
+  "greatPortlandStreetStopG": [
+    {
+      "busNumber": "27",
+      "destination": "Hammersmith Grove",
+      "expectedArrival": "Mon 13 Jul 2020 02:31 pm",
+      "arrivalTimeInMinutes": 1
+    },
+    {
+      "busNumber": "30",
+      "destination": "Marble Arch",
+      "expectedArrival": "Mon 13 Jul 2020 02:32 pm",
+      "arrivalTimeInMinutes": 2
+    },
+    {
+      "busNumber": "18",
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:33 pm",
+      "arrivalTimeInMinutes": 4
+    },
+    {
+      "busNumber": "205",
+      "destination": "Paddington",
+      "expectedArrival": "Mon 13 Jul 2020 02:34 pm",
+      "arrivalTimeInMinutes": 4
+    },
+    {
+      "busNumber": "27",
+      "destination": "Hammersmith Grove",
+      "expectedArrival": "Mon 13 Jul 2020 02:36 pm",
+      "arrivalTimeInMinutes": 7
+    },
+    {
+      "busNumber": "18",
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:38 pm",
+      "arrivalTimeInMinutes": 9
+    },
+    {
+      "busNumber": "27",
+      "destination": "Hammersmith Grove",
+      "expectedArrival": "Mon 13 Jul 2020 02:43 pm",
+      "arrivalTimeInMinutes": 13
+    },
+    {
+      "busNumber": "18",
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:43 pm",
+      "arrivalTimeInMinutes": 14
+    },
+    {
+      "busNumber": "30",
+      "destination": "Marble Arch",
+      "expectedArrival": "Mon 13 Jul 2020 02:46 pm",
+      "arrivalTimeInMinutes": 16
+    },
+    {
+      "busNumber": "205",
+      "destination": "Paddington",
+      "expectedArrival": "Mon 13 Jul 2020 02:46 pm",
+      "arrivalTimeInMinutes": 16
+    },
+    {
+      "busNumber": "18",
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:49 pm",
+      "arrivalTimeInMinutes": 19
+    },
+    {
+      "busNumber": "27",
+      "destination": "Hammersmith Grove",
+      "expectedArrival": "Mon 13 Jul 2020 02:52 pm",
+      "arrivalTimeInMinutes": 22
+    },
+    {
+      "busNumber": "18",
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:54 pm",
+      "arrivalTimeInMinutes": 24
+    },
+    {
+      "busNumber": "205",
+      "destination": "Paddington",
+      "expectedArrival": "Mon 13 Jul 2020 02:55 pm",
+      "arrivalTimeInMinutes": 25
+    },
+    {
+      "busNumber": "30",
+      "destination": "Marble Arch",
+      "expectedArrival": "Mon 13 Jul 2020 02:57 pm",
+      "arrivalTimeInMinutes": 27
+    },
+    {
+      "busNumber": "205",
+      "destination": "Paddington",
+      "expectedArrival": "Mon 13 Jul 2020 02:58 pm",
+      "arrivalTimeInMinutes": 28
+    },
+    {
+      "busNumber": "18",
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:59 pm",
+      "arrivalTimeInMinutes": 29
+    }
+  ],
+  "greatPortlandStreetStopH": [
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 04:46 pm",
+      "arrivalTimeInMinutes": 0
+    },
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 04:48 pm",
+      "arrivalTimeInMinutes": 2
+    },
+    {
+      "busNumber": "30",
+      "destination": "Hackney Wick",
+      "expectedArrival": "Mon 13 Jul 2020 04:50 pm",
+      "arrivalTimeInMinutes": 4
+    },
+    {
+      "busNumber": "27",
+      "destination": "Chalk Farm",
+      "expectedArrival": "Mon 13 Jul 2020 04:51 pm",
+      "arrivalTimeInMinutes": 5
+    },
+    {
+      "busNumber": "205",
+      "destination": "Bow Church",
+      "expectedArrival": "Mon 13 Jul 2020 04:51 pm",
+      "arrivalTimeInMinutes": 5
+    },
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 04:54 pm",
+      "arrivalTimeInMinutes": 8
+    },
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 04:56 pm",
+      "arrivalTimeInMinutes": 9
+    },
+    {
+      "busNumber": "205",
+      "destination": "Bow Church",
+      "expectedArrival": "Mon 13 Jul 2020 04:56 pm",
+      "arrivalTimeInMinutes": 10
+    },
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 05:01 pm",
+      "arrivalTimeInMinutes": 14
+    },
+    {
+      "busNumber": "27",
+      "destination": "Chalk Farm",
+      "expectedArrival": "Mon 13 Jul 2020 05:04 pm",
+      "arrivalTimeInMinutes": 18
+    },
+    {
+      "busNumber": "30",
+      "destination": "Hackney Wick",
+      "expectedArrival": "Mon 13 Jul 2020 05:07 pm",
+      "arrivalTimeInMinutes": 21
+    },
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 05:08 pm",
+      "arrivalTimeInMinutes": 22
+    },
+    {
+      "busNumber": "205",
+      "destination": "Bow Church",
+      "expectedArrival": "Mon 13 Jul 2020 05:09 pm",
+      "arrivalTimeInMinutes": 23
+    },
+    {
+      "busNumber": "18",
+      "destination": "Euston",
+      "expectedArrival": "Mon 13 Jul 2020 05:11 pm",
+      "arrivalTimeInMinutes": 25
+    }
+  ]
+}

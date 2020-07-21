@@ -1,0 +1,15 @@
+{
+  "greatPortlandStreetStopG": [
+    {
+      "arrivalTimeInMinutes": 29,
+      "destination": "Sudbury",
+      "expectedArrival": "Mon 13 Jul 2020 02:54 pm"
+    },
+    {
+      "arrivalTimeInMinutes": 0,
+      "busNumber": "18",
+      "expectedArrival": "Mon 13 Jul 2020 02:54 pm"
+    }
+  ],
+  "greatPortlandStreetStopH": []
+}
