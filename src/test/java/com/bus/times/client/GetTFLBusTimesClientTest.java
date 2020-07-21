@@ -50,7 +50,8 @@ class GetTFLBusTimesClientTest {
   }
 
   @Test
-  void shouldReturnSuccessfulClientResponseGivenValidStopCode() throws URISyntaxException, IOException {
+  void shouldReturnSuccessfulClientResponseGivenValidStopCode()
+      throws URISyntaxException, IOException {
     mockServer
         .expect(ExpectedCount.once(), requestTo(new URI(format(CLIENT_URL, G_STOP_CODE))))
         .andExpect(method(HttpMethod.GET))
@@ -72,7 +73,8 @@ class GetTFLBusTimesClientTest {
   }
 
   @Test
-  void shouldReturnSuccessfulClientResponseGivenMissingFields() throws URISyntaxException, IOException {
+  void shouldReturnSuccessfulClientResponseGivenMissingFields()
+      throws URISyntaxException, IOException {
     mockServer
         .expect(ExpectedCount.once(), requestTo(new URI(format(CLIENT_URL, G_STOP_CODE))))
         .andExpect(method(HttpMethod.GET))

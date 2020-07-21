@@ -76,7 +76,8 @@ class IntegrationTest {
                         "responses/getbustimes/get-bus-times-api-response-missing-values.json")));
   }
 
-  private void mockClientResponse(String responsePath, String stopCode) throws IOException, URISyntaxException {
+  private void mockClientResponse(String responsePath, String stopCode)
+      throws IOException, URISyntaxException {
     mockServer
         .expect(ExpectedCount.once(), requestTo(new URI(format(CLIENT_URL, stopCode))))
         .andExpect(method(HttpMethod.GET))
